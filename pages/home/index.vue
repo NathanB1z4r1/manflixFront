@@ -31,9 +31,9 @@
         </div>
       </div>
 
-      <img class="logoManflix fadeClass" src="manflix.png" alt="Logo" />
+      <img class="fadeClass logoManflix" src="manflix.png" alt="Logo" />
 
-      <div class="banner-image">
+      <div class="fadeClass banner-image">
         <img :src="banner.image" alt="Movie Image" />
       </div>
     </section>
