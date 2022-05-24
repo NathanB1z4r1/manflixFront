@@ -11,9 +11,14 @@
         <div
           class="info-content flex flex-column align-items-start justify-content-center"
         >
-          <img :src="banner.logo" alt="Movie Logo" />
+          <img class="fadeClass" :src="banner.logo" alt="Movie Logo" />
           <div
-            class="rating flex flex-row align-items-center justify-content-start"
+            class="
+            fadeClass
+            rating
+            flex flex-row
+            align-items-center
+            justify-content-start"
           >
             <i class="m-1 w-auto pi pi-star-fill"></i>
             <i class="m-1 w-auto pi pi-star-fill"></i>
@@ -22,11 +27,11 @@
             <i class="m-1 w-auto pi pi-star-fill"></i>
             <span>2016 2 temporadas</span>
           </div>
-          <p v-if="banner.description">{{ banner.description }}</p>
+          <p class="fadeClass" v-if="banner.description">{{ banner.description }}</p>
         </div>
       </div>
 
-      <img class="logoManflix" src="manflix.png" alt="Logo" />
+      <img class="logoManflix fadeClass" src="manflix.png" alt="Logo" />
 
       <div class="banner-image">
         <img :src="banner.image" alt="Movie Image" />
@@ -161,6 +166,19 @@ export default {
 $height-banner: 52vh;
 $width-banner-image: 55vw;
 
+  .fadeClassto {
+    animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
 main {
   background-color: var(--background-banner);
   color: var(--placeholder-field-color);
@@ -281,5 +299,6 @@ main {
       }
     }
   }
-}
+
+
 </style>
