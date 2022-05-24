@@ -166,18 +166,7 @@ export default {
 $height-banner: 52vh;
 $width-banner-image: 55vw;
 
-  @keyframes fadeIn {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-
-  .fadeClass {
-    animation: fadeIn 5s;
-  }
+ 
 
 main {
   background-color: var(--background-banner);
@@ -300,4 +289,18 @@ main {
     }
   }
 }
+ .fadeClass {
+    animation: fadeIn 5s;
+  }
+
+ @keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+ 
 </style>
