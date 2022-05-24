@@ -166,7 +166,7 @@ export default {
 $height-banner: 52vh;
 $width-banner-image: 55vw;
 
-  .fadeClassto {
+  .fadeClass {
     animation: fadeIn 5s;
   }
 
@@ -299,6 +299,5 @@ main {
       }
     }
   }
-
-
+}
 </style>
